@@ -76,6 +76,18 @@
                     <name>day</name>
                     <value>${coord:formatTime(coord:nominalTime(), &quot;d&quot;)}</value>
                 </property>
+                <property>
+                    <name>last_week_year</name>
+                    <value>${coord:formatTime(coord:dateOffset(coord:nominalTime(), -7, 'DAY'), &quot;y&quot;)}</value>
+                </property>
+                <property>
+                    <name>last_week_month</name>
+                    <value>${coord:formatTime(coord:dateOffset(coord:nominalTime(), -7, 'DAY'), &quot;M&quot;)}</value>
+                </property>
+                <property>
+                    <name>last_week_day</name>
+                    <value>${coord:formatTime(coord:dateOffset(coord:nominalTime(), -7, 'DAY'), &quot;d&quot;)}</value>
+                </property>
             </configuration>
         </workflow>
     </action>
